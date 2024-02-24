@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--Thanks to Pranav Rajpurkar (https://rajpurkar.github.io/) and TweetQA (https://github.com/TweetQA/tweetqa.github.io) for this great leaderboard template!
+We made some modifications to our BiPaR dataset.-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Monolingual, Multilingual and Cross-lingual Reading Comprehension on Novels</title>
+    <meta name="description" content="BiPaR is a manually annotated bilingual parallel novel-style machine reading comprehension (MRC) dataset, developed to support monolingual, multilingual and cross-lingual reading comprehension on novels. The biggest difference between BiPaR and existing reading comprehension datasets is that each triple (Passage, Question, Answer) in BiPaR is written parallelly in two languages. We analyze
+    BiPaR in depth and find that BiPaR is diverse in prefixes of questions, answer types and relationships between questions and passages. We also observe that answering questions of novels requires reading comprehension skills of coreference resolution, multi-sentence reasoning, and understanding of implicit causality, etc.">
+    <meta name="keywords" content="Monolingual, Multilingual, Cross-lingual, Question Answering, BiPaR">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <meta property="og:image" content="image/logo1.png">
+    <link rel="icon" href="image/favicon1.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" id="topNavbar" role="navigation">
+      <div class="container clearfix" id="navContainer">
+        <div class="rightNav">
+          <div class="collapseDiv">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+          </div>
+        </div>
+        <div class="leftNav">
+          <div class="brandDiv">
+            <a class="navbar-brand" href="https://multinlp.github.io/BiPaR/">BiPaR</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="header">
+        <div id="header-desc">
+            <!-- <p style="font-size:10rem; color:whitesmoke"><b>BiPaR</b></p>
+            <p style="font-size:3.5rem; color: white">Monolingual, Multilingual and Cross-lingual Reading Comprehension on Novels</p> -->
+            <p style="font-size:10rem; "><b>BiPaR</b></p>
+            <p style="font-size:3.5rem; ">Monolingual, Multilingual and Cross-lingual Reading Comprehension on Novels</p>
+
+        </div>
+    </div>
+
+
+    <div class="cover" id="contentCover">
+      <div class="container">
+          <!-- <div class="col-lg-10 col-md-10 col-sm-15 col-xs-15 thumb">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                  <h2>What is BiPaR?</h2>
+                </div>
+                <p>
+                  BiPaR is a manually annotated bilingual parallel novel-style machine reading comprehension (MRC) dataset, developed to support monolingual, multilingual and cross-lingual reading comprehension on novels. The biggest difference between BiPaR and existing reading comprehension datasets is that each triple (Passage, Question, Answer) in BiPaR is written parallelly in two languages. We analyze
+                  BiPaR in depth and find that BiPaR is diverse in prefixes of questions, answer types and relationships between questions and passages. We also observe that answering questions of novels requires reading comprehension skills of coreference resolution, multi-sentence reasoning, and understanding of implicit causality, etc.
+                </p>
+
+                <p>
+                <a class="btn actionBtn" href="https://arxiv.org/abs/1910.05040" target="_blank">BiPaR Paper (Jing et al. EMNLP '19)</a>
+                </p>
+                <hr>
+
+                <div class="infoHeadline">
+                  <h2>BiPaR Example</h2>
+                </div>
+                <p>
+                <img src="image/example.png" class="img-responsive mx-auto d-block"/>
+                </p>
+                <hr>
+
+                <div class="infoHeadline">
+                  <h2>Question Types</h2>
+                </div>
+                <p>
+                <img src="image/question_types.png" class="img-responsive mx-auto d-block"/>
+                </p> -->
+                <!-- <p><center>The distribution of trigram prefixes of questions in BiPaR. </center></p> -->
+                <!-- <p>
+                  The distribution of trigram prefixes of questions in BiPaR. In particular, BiPaR has 15.6% why and 9.5% how questions. Since in the novel texts, causality is usually not represented by explicit expressions such as “why”, “because”, and “the reason for”, answering these questions in BiPaR requires the MRC models to understand implicit causality.
+                </p>
+                <br/> -->
+
+<!--                 <p>
+                <img src="image/tweetqa_hwords.png" class="img-responsive mx-auto d-block"/>
+                </p>
+                <p><center>1000 most distinctive domain words from TweetQA.</center></p>
+                <hr> -->
+
+                <!-- <div class="infoHeadline">
+                  <h2>Getting Started</h2>
+                </div>
+
+                <p>You can download a copy of the dataset from different task in json format:</p>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="btn actionBtn inverseBtn" href="https://github.com/sharejing/BiPaR" download>BiPaR Data and Evaluation Script</a></li>
+                  </ul>
+                </p> -->
+
+<!--                 <p>To evaluate your models on our official testing dataset, please check our codalab competition site:</p>
+                <a class="btn actionBtn inverseBtn" href="https://competitions.codalab.org/competitions/20307?secret_key=6684a0cf-9eac-4ac1-a648-213a3961e0fc" target="_blank">CodaLab Submission</a>
+                <hr> -->
+
+                <!-- <div class="infoHeadline">
+                  <h2>License</h2>
+                </div>
+
+                <p>
+                  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
+                </p> -->
+
+<!--                 <div class="infoHeadline">
+                  <h2>Citations</h2>
+                </div>
+
+                <p>Please cite our paper as below if you use the BiPaR dataset.</p>
+                <br/>
+
+                <pre><code>@inproceedings{jing2019bipar,
+  title={BiPaR: A Bilingual Parallel Dataset for Multilingual and Cross-lingual Reading Comprehension on Novels},
+  author={Yimin Jing , Deyi Xiong and Yan Zhen},
+  booktitle={Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing},
+  year={2019}
+}</code></pre> -->
+                
+                <!-- <hr>
+
+                <div class="infoHeadline">
+                  <h2>Have Questions?</h2>
+                </div>
+                <p>For dataset issues, email to <a href="mailto:yymmjing@gmail.com" target="_blank">yymmjing@gmail.com</a>. <br> -->
+                  <!--For submission issues, please email Hong Wang at <a href="mailto:hongwang600@cs.ucsb.edu" target="_blank">hongwang600@cs.ucsb.edu</a>. -->
+                <!-- </p>
+                <p>
+                </p>                
+                <hr>
+
+                </div>
+            </div>
+          </div> -->
+
+          <h1 style="text-align: center;"><b>LEADERBOARD</b></h1>
+
+          <div class="col-lg-20 col-md-20 col-sm-20 col-xs-20 thumb">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                  <h2 style="text-align: center;">Leaderboard Vietnamese Language Understanding Evaluation</h2></div>
+                <table class="table performanceTable">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th colspan="2">UIT-ViQuAD 2.0</th>
+                    <th colspan="2">ViNLI</th>
+                    <th>VSMEC</th>
+                    <th>ViHOS</th>
+                    <th>NIIVTB POS</th>
+                  </tr>
+                  
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>EM</th>
+                    <th>F1</th>
+                    <th>Acc</th>
+                    <th>F1</th>
+                    <th>F1</th>
+                    <th>F1</th>
+                    <th>F1</th>
+                  </tr>
+
+                  <tr>
+                      <td>
+                        <p>1</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td>University of Infomation Technology</td>
+                      <td style="word-break:break-word;">mBERT</td>
+                      <td>52.34</td>
+                      <td>63.71</td>
+                      <td>73.45</td>
+                      <td>73.62</td>
+                      <td>54.59</td>
+                      <td>76.22</td>
+                      <td>81.34</td>
+                    </tr>
+
+                  <tr>
+                    <td>
+                      <p>2</p>
+                      <span class="date label label-default">January 1, 2024</span>
+                    </td>
+                    <td></td>
+                    <td style="word-break:break-word">WikiBERT</td>
+                    <td>42.16</td>
+                    <td>52.62</td>
+                    <td>71.18</td>
+                    <td>71.49</td>
+                    <td>57.64</td>
+                    <td>77.05</td>
+                    <td>75.52</td>
+                  </tr>
+<!-- 
+                  <tr>
+                    <td>
+                      <p>2</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">BERT Base<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td>41.40</td>
+                    <td>55.03</td>
+                    <td><b>48.87</b></td>
+                    <td><b>64.09</b></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p>3</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">DrQA<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td>27.00</td>
+                    <td>39.29</td>
+                    <td>37.40</td>
+                    <td>53.11</td>
+                  </tr> -->
+                
+                </table>
+                <hr>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 thumb">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                  <h2>Multilingual Leaderboard</h2></div>
+                <table class="table performanceTable">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Model</th>
+                    <th colspan="2">EN</th>
+                    <th colspan="2">ZH</th>
+                  </tr>
+
+                  <tr>
+                      <th></th>
+                      <th></th>
+                      <th>EM</th>
+                      <th>F1</th>
+                      <th>EM</th>
+                      <th>F1</th>
+                    </tr>
+
+                  <tr>
+                    <td>
+                      <p>1</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">BERT Base<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td><b>38.33</b></td>
+                    <td><b>51.20</b></td>
+                    <td><b>49.00</b></td>
+                    <td><b>64.06</b></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p>2</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">DrQA<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td>28.00</td>
+                    <td>42.49</td>
+                    <td>36.60</td>
+                    <td>53.34</td>
+                  </tr>
+
+                </table>
+                <hr>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 thumb">
+            <div class="infoCard">
+              <div class="infoBody">
+                <div class="infoHeadline">
+                  <h2>Cross-lingual Task1 Leaderboard</h2></div>
+                <table class="table performanceTable">
+                  <tr>
+                    <th>Rank</th>
+                    <th>Model</th>
+                    <th colspan="2">QZH</th>
+                    <th colspan="2">QEN</th>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p>1</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">BERT Large<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td><b>37.53</b></td>
+                    <td><b>51.51</b></td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p>2</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">BERT Base<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td>32.80</td>
+                    <td>46.36</td>
+                    <td><b>39.87</b></td>
+                    <td><b>53.10</b></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p>3</p>
+                      <span class="date label label-default">August 26, 2019</span>
+                    </td>
+                    <td style="word-break:break-word;">DrQA<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                    <td>21.93</td>
+                    <td>34.45</td>
+                    <td>27.53</td>
+                    <td>41.08</td>
+                  </tr>
+
+                </table>
+                <hr>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 thumb">
+              <div class="infoCard">
+                <div class="infoBody">
+                  <div class="infoHeadline">
+                    <h2>Cross-lingual Task2 Leaderboard</h2></div>
+                  <table class="table performanceTable">
+                    <tr>
+                      <th>Rank</th>
+                      <th>Model</th>
+                      <th colspan="2">QZH</th>
+                      <th colspan="2">QEN</th>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <p>1</p>
+                        <span class="date label label-default">August 26, 2019</span>
+                      </td>
+                      <td style="word-break:break-word;">BERT Large<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                      <td>5.60</td>
+                      <td><b>22.29</b></td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <p>2</p>
+                        <span class="date label label-default">August 26, 2019</span>
+                      </td>
+                      <td style="word-break:break-word;">BERT Base<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                      <td>5.73</td>
+                      <td>21.08</td>
+                      <td><b>7.67</b></td>
+                      <td><b>20.69</b></td>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <p>3</p>
+                        <span class="date label label-default">August 26, 2019</span>
+                      </td>
+                      <td style="word-break:break-word;">DrQA<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                      <td><b>7.00</b></td>
+                      <td>18.63</td>
+                      <td>4.07</td>
+                      <td>16.64</td>
+                    </tr>
+  
+                  </table>
+                  <hr>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-static-bottom footer">
+      <div class="container clearfix">
+        <div class="rightNav">
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://multinlp.github.io/BiPaR/" target="_blank">BiPaR</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+</html>
