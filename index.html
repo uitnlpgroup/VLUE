@@ -5,10 +5,9 @@ We made some modifications to our BiPaR dataset.-->
   
   <head>
     <meta charset="utf-8">
-    <title>Monolingual, Multilingual and Cross-lingual Reading Comprehension on Novels</title>
-    <meta name="description" content="BiPaR is a manually annotated bilingual parallel novel-style machine reading comprehension (MRC) dataset, developed to support monolingual, multilingual and cross-lingual reading comprehension on novels. The biggest difference between BiPaR and existing reading comprehension datasets is that each triple (Passage, Question, Answer) in BiPaR is written parallelly in two languages. We analyze
-    BiPaR in depth and find that BiPaR is diverse in prefixes of questions, answer types and relationships between questions and passages. We also observe that answering questions of novels requires reading comprehension skills of coreference resolution, multi-sentence reasoning, and understanding of implicit causality, etc.">
-    <meta name="keywords" content="Monolingual, Multilingual, Cross-lingual, Question Answering, BiPaR">
+    <title>VLUE Benchmark Leaderboard</title>
+    <meta name="description" content="Vietnamese Language Understanding Evaluation benchmark">
+    <meta name="keywords" content="Benchmark, Evaluation, VLUE, Vietnamese, Natural Language Understanding">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -35,17 +34,15 @@ We made some modifications to our BiPaR dataset.-->
         </div>
         <div class="leftNav">
           <div class="brandDiv">
-            <a class="navbar-brand" href="https://multinlp.github.io/BiPaR/">BiPaR</a></div>
+            <a class="navbar-brand" href="#">VLUE</a></div>
         </div>
       </div>
     </div>
 
     <div id="header">
         <div id="header-desc">
-            <!-- <p style="font-size:10rem; color:whitesmoke"><b>BiPaR</b></p>
-            <p style="font-size:3.5rem; color: white">Monolingual, Multilingual and Cross-lingual Reading Comprehension on Novels</p> -->
-            <p style="font-size:10rem; "><b>BiPaR</b></p>
-            <p style="font-size:3.5rem; ">Monolingual, Multilingual and Cross-lingual Reading Comprehension on Novels</p>
+            <p style="font-size:10rem; "><b>VLUE</b></p>
+            <p style="font-size:3.5rem; ">Vietnamese Language Understanding Evaluation benchmark</p>
 
         </div>
     </div>
@@ -155,88 +152,230 @@ We made some modifications to our BiPaR dataset.-->
               <div class="infoBody">
                 <div class="infoHeadline">
                   <h2 style="text-align: center;">Leaderboard Vietnamese Language Understanding Evaluation</h2></div>
-                <table class="table performanceTable">
-                  <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Model</th>
-                    <th colspan="2">UIT-ViQuAD 2.0</th>
-                    <th colspan="2">ViNLI</th>
-                    <th>VSMEC</th>
-                    <th>ViHOS</th>
-                    <th>NIIVTB POS</th>
-                  </tr>
-                  
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>EM</th>
-                    <th>F1</th>
-                    <th>Acc</th>
-                    <th>F1</th>
-                    <th>F1</th>
-                    <th>F1</th>
-                    <th>F1</th>
-                  </tr>
+                  <table class="table performanceTable">
+                    <tr>
+                      <th>Rank</th>
+                      <th>Name</th>
+                      <th>Model</th>
+                      <th>Score</th>
+                      <th colspan="2">UIT-ViQuAD 2.0</th>
+                      <th colspan="2">ViNLI</th>
+                      <th>VSMEC</th>
+                      <th>ViHOS</th>
+                      <th>NIIVTB POS</th>
+                    </tr>
+                    
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th>EM</th>
+                      <th>F1</th>
+                      <th>Acc</th>
+                      <th>F1</th>
+                      <th>F1</th>
+                      <th>F1</th>
+                      <th>F1</th>
+                    </tr>
 
-                  <tr>
+                    <tr>
                       <td>
                         <p>1</p>
                         <span class="date label label-default">January 1, 2024</span>
                       </td>
-                      <td>University of Infomation Technology</td>
-                      <td style="word-break:break-word;">mBERT</td>
-                      <td>52.34</td>
-                      <td>63.71</td>
-                      <td>73.45</td>
-                      <td>73.62</td>
-                      <td>54.59</td>
-                      <td>76.22</td>
-                      <td>81.34</td>
+                      <td>
+                        <p>The UIT NLP Group</p>
+                        <p style="font-size:95%;color: rgb(119, 119, 119);"><i>University of Infomation Technology</i></p>
+                      </td>
+                      <td style="word-break:break-word">
+                        <a href="#">
+                          <b>CafeBERT</b>
+                        </a>
+                      </td>
+                      <td><u>77.51</u></td>
+                      <td>65.25</td>
+                      <td>76.36</td>
+                      <td>86.11</td>
+                      <td>86.16</td>
+                      <td>66.12</td>
+                      <td>78.56</td>
+                      <td>86.04</td>
                     </tr>
 
-                  <tr>
-                    <td>
-                      <p>2</p>
-                      <span class="date label label-default">January 1, 2024</span>
-                    </td>
-                    <td></td>
-                    <td style="word-break:break-word">WikiBERT</td>
-                    <td>42.16</td>
-                    <td>52.62</td>
-                    <td>71.18</td>
-                    <td>71.49</td>
-                    <td>57.64</td>
-                    <td>77.05</td>
-                    <td>75.52</td>
-                  </tr>
-<!-- 
-                  <tr>
-                    <td>
-                      <p>2</p>
-                      <span class="date label label-default">August 26, 2019</span>
-                    </td>
-                    <td style="word-break:break-word;">BERT Base<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
-                    <td>41.40</td>
-                    <td>55.03</td>
-                    <td><b>48.87</b></td>
-                    <td><b>64.09</b></td>
-                  </tr>
+                    <tr>
+                      <td>
+                        <p>2</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td></td>
+                      <td style="word-break:break-word">
+                        <a href="https://huggingface.co/FacebookAI/xlm-roberta-large">
+                          <b>XLM-Roberta large</b>
+                        </a>
+                      </td>
+                      <td><u>76.53</u></td>
+                      <td>64.71</td>
+                      <td>75.36</td>
+                      <td>85.99</td>
+                      <td>86.10</td>
+                      <td>62.24</td>
+                      <td>77.70</td>
+                      <td>83.62</td>
+                    </tr>
 
-                  <tr>
-                    <td>
-                      <p>3</p>
-                      <span class="date label label-default">August 26, 2019</span>
-                    </td>
-                    <td style="word-break:break-word;">DrQA<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
-                    <td>27.00</td>
-                    <td>39.29</td>
-                    <td>37.40</td>
-                    <td>53.11</td>
-                  </tr> -->
-                
-                </table>
+                    <tr>
+                      <td>
+                        <p>3</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td></td>
+                      <td style="word-break:break-word">
+                        <a href="https://github.com/VinAIResearch/PhoBERT">
+                          <b>PhoBERT large</b>
+                        </a>
+                      </td>
+                      <td><u>73.07</u></td>
+                      <td>57.27</td>
+                      <td>70.88</td>
+                      <td>80.67</td>
+                      <td>80.69</td>
+                      <td>65.44</td>
+                      <td>77.16</td>
+                      <td>79.36</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p>4</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td></td>
+                      <td style="word-break:break-word">
+                        <a href="https://github.com/VinAIResearch/PhoBERT">
+                          <b>PhoBERT base</b>
+                        </a>
+                      </td>
+                      <td><u>69.22</u></td>
+                      <td>51.00</td>
+                      <td>64.29</td>
+                      <td>78.00</td>
+                      <td>78.05</td>
+                      <td>59.91</td>
+                      <td>75.69</td>
+                      <td>77.60</td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <p>5</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td></td>
+                      <td style="word-break:break-word">
+                        <a href="https://huggingface.co/FacebookAI/xlm-roberta-base">
+                          <b>XLM-Roberta base</b>
+                        </a>
+                      </td>
+                      <td><u>68.84</u></td>
+                      <td>50.49</td>
+                      <td>59.23</td>
+                      <td>76.83</td>
+                      <td>77.01</td>
+                      <td>61.89</td>
+                      <td>74.67</td>
+                      <td>81.76</td>
+                    </tr>
+  
+                    <tr>
+                        <td>
+                          <p>6</p>
+                          <span class="date label label-default">January 1, 2024</span>
+                        </td>
+                        <td></td>
+                        <td style="word-break:break-word;">
+                          <a href="https://huggingface.co/google-bert/bert-base-multilingual-cased">
+                            <b>mBERT</b>
+                          </a>
+                        </td>
+                        <td><u>67.90</u></td>
+                        <td>52.34</td>
+                        <td>63.71</td>
+                        <td>73.45</td>
+                        <td>73.62</td>
+                        <td>54.59</td>
+                        <td>76.22</td>
+                        <td>81.34</td>
+                      </tr>
+  
+                    <tr>
+                      <td>
+                        <p>7</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td></td>
+                      <td style="word-break:break-word">
+                        <a href="https://huggingface.co/TurkuNLP/wikibert-base-vi-cased">
+                          <b>WikiBERT</b>
+                        </a>
+                      </td>
+                      <td><u>63.95</u></td>
+                      <td>42.16</td>
+                      <td>52.62</td>
+                      <td>71.18</td>
+                      <td>71.49</td>
+                      <td>57.64</td>
+                      <td>77.05</td>
+                      <td>75.52</td>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <p>8</p>
+                        <span class="date label label-default">January 1, 2024</span>
+                      </td>
+                      <td></td>
+                      <td style="word-break:break-word">
+                        <a href="https://huggingface.co/distilbert/distilbert-base-multilingual-cased">
+                          <b>DistilBERT</b>
+                        </a>
+                      </td>
+                      <td><u>58.62</u></td>
+                      <td>35.78</td>
+                      <td>53.83</td>
+                      <td>44.39</td>
+                      <td>66.77</td>
+                      <td>53.83</td>
+                      <td>75.72</td>
+                      <td>80.05</td>
+                    </tr>
+
+  <!-- 
+                    <tr>
+                      <td>
+                        <p>2</p>
+                        <span class="date label label-default">August 26, 2019</span>
+                      </td>
+                      <td style="word-break:break-word;">BERT Base<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                      <td>41.40</td>
+                      <td>55.03</td>
+                      <td><b>48.87</b></td>
+                      <td><b>64.09</b></td>
+                    </tr>
+  
+                    <tr>
+                      <td>
+                        <p>3</p>
+                        <span class="date label label-default">August 26, 2019</span>
+                      </td>
+                      <td style="word-break:break-word;">DrQA<p class="institution">Baseline</p><p><a href="https://arxiv.org/abs/1910.05040" target="_blank">(Jing et al. EMNLP '19)</a></p></td>
+                      <td>27.00</td>
+                      <td>39.29</td>
+                      <td>37.40</td>
+                      <td>53.11</td>
+                    </tr> -->
+                  
+                  </table>
                 <hr>
               </div>
             </div>
